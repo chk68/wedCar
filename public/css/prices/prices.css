@@ -1,0 +1,230 @@
+.prices_container {
+    background-color: white;
+}
+
+#price-calculator{
+    background-color:#f5efe6 ;
+}
+
+.prices_time_city {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prices_select_time,
+.prices_select_city {
+    margin-right: 20px; /* Расстояние между элементами */
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+    color: #8c7e60;
+    font-family: "Museo Sans Cyrl 300", serif;
+}
+
+/* Стилизация контейнера для селектов */
+.prices_select_time select,
+.prices_select_city select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc; /* Добавление рамки */
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    color: #8c7e60;
+    font-family: "Museo Sans Cyrl 300", serif;
+    cursor: pointer;
+}
+
+
+/* Убираем стандартную стрелку */
+.prices_select_time select::-ms-expand,
+.prices_select_city select::-ms-expand {
+    display: none;
+}
+
+/* Стилизация стрелки */
+.prices_select_time select:after,
+.prices_select_city select:after {
+    content: "\25BC"; /* Стрелка вниз */
+    position: absolute;
+    top: calc(50% - 0.5em);
+    right: 10px;
+}
+
+/* Подчеркивание при фокусе */
+.prices_select_time select:focus,
+.prices_select_city select:focus {
+    outline: none;
+    border-color: #83765a; /* Цвет подчеркивания при фокусе */
+}
+
+/* Стилизация элементов в выпадающем списке */
+.prices_select_time select option,
+.prices_select_city select option {
+    font-family: "Arial", sans-serif; /* Новый шрифт */
+    color: #8c7e60; /* Фиолетовый цвет */
+}
+
+.prices_time_city_title{
+    margin-left: auto;
+    font-family: "Al Fresco W05 Regular", serif;
+}
+
+
+
+
+
+
+.decoration-block {
+    display: inline-block;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-top: 30px;
+    background-color: #f5efe6;
+    border-radius: 10px; /* Закругленные углы */
+    overflow: hidden; /* Сокрытие изображения, выходящего за пределы карточки */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.62);
+}
+
+
+.decoration-block img {
+    width: 400px;
+    height: 250px;
+    display: inline-block;
+    margin-bottom: 5px;
+    transition: transform 0.3s ease;
+}
+
+.decoration-block:hover img {
+    transform: scale(1.1); /* Увеличение изображения при наведении */
+}
+
+
+
+
+.prices_decoration_bloc_content {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Используем space-between для равномерного распределения по ширине */
+    gap: 20px;
+    padding: 0 80px; /* Добавляем отступы по бокам */
+    /* Убираем левый и правый margin, используем auto для центрирования */
+    align-items: center;
+    font-size: 20px;
+    color: #8c7e60;
+    font-family: "Museo Sans Cyrl 300", serif;
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 20px;
+}
+
+.checkbox-label {
+    margin-left: 20px;
+}
+
+.checkbox_ok {
+    font-size: 40px;
+    margin-left: 20px;
+}
+
+
+
+
+.prices_decorations_desc {
+    margin-top: 20px;
+    margin-bottom: 60px;
+    font-size: 24px;
+    color: #968772;
+    text-align: center;
+    font-family: "Al Fresco W05 Regular", serif;
+}
+
+
+.prices_decorations_desc-text {
+    margin-top: 400px;
+    font-size: 58px;
+    color: #968772;
+    text-align: center;
+    font-family: "Al Fresco W05 Regular", serif;
+}
+
+.prices_decorations_desc_description {
+    font-family: "Museo Sans Cyrl 300", serif;
+}
+
+
+.prices_decoration_block_name_price {
+    display: flex;
+    align-items: center; /* Чтобы элементы выровнялись по вертикали */
+    justify-content: center; /* Чтобы элементы выровнялись по горизонтали */
+    text-align: center;
+}
+
+.prices_decoration-name,
+.prices_decoration-price {
+    margin-right: 10px; /* Добавляем небольшой отступ между названием и ценой */
+    margin-top: 10px;
+    font-size: 25px;
+    color: #8c7e60;
+    font-family: "Havana-Regular", serif;
+    text-align: center;
+
+}
+
+
+
+
+
+
+
+
+.prices_additional-services {
+    display: flex;
+    justify-content: space-between; /* Распределение элементов по краям контейнера */
+    align-items: center; /* Выравнивание по вертикали */
+    margin-left: 120px;
+    margin-top: 20px;
+    font-family: "Museo Sans Cyrl 300", serif;
+    font-size: 30px;
+    color: #8c7e60;
+}
+
+.checkbox-label {
+    margin-right: 40px; /* Расстояние между элементами */
+}
+
+.prices_total_price {
+    font-family: "Museo Sans Cyrl 300", serif;
+    font-size: 30px;
+    color: #8c7e60;
+    margin-right: 120px;
+}
+
+.prices_btn {
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 120px;
+    margin-bottom: 20px;
+    border: 2px solid #8c7e60; /* Окантовка кнопки */
+    background-color: #8c7e60;
+}
+
+.prices_btn:hover{
+    background-color: #f5efe6;
+    color: #8c7e60;
+}
+
+.prices_info_block{
+    margin-bottom: 60px;
+}
+
+
+

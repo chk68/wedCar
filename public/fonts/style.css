@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'AlFresco';
+    src: local('AlFresco Regular'), local('AlFresco-Regular'),
+        url('AlFresco.woff2') format('woff2'),
+        url('AlFresco.woff') format('woff'),
+        url('AlFresco.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
